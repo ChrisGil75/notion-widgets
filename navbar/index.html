@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Navigation — Système Pédagogique</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:        #ffffff;
+      --border:    #e8e4df;
+      --text:      #2c2825;
+      --muted:     #8c8078;
+      --accent:    #c0392b;
+      --hover-bg:  #f5f2ef;
+      --pill-bg:   #f0ebe6;
+      --shadow:    0 1px 3px rgba(0,0,0,.06), 0 1px 8px rgba(0,0,0,.04);
+      --radius:    10px;
+      --font:      'DM Sans', sans-serif;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg:       #1e1c1a;
+        --border:   #312e2b;
+        --text:     #e8e2db;
+        --muted:    #7a7068;
+        --accent:   #e05c4b;
+        --hover-bg: #272421;
+        --pill-bg:  #2c2825;
+      }
+    }
+
+    html, body {
+      height: 100%;
+      background: transparent;
+      font-family: var(--font);
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      padding: 6px 8px;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      width: 100%;
+      flex-wrap: wrap;
+    }
+
+    /* Séparateur vertical */
+    .sep {
+      width: 1px;
+      height: 18px;
+      background: var(--border);
+      margin: 0 2px;
+      flex-shrink: 0;
+    }
+
+    a {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 5px 11px;
+      border-radius: 7px;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--text);
+      transition: background .15s, color .15s, transform .1s;
+      white-space: nowrap;
+      letter-spacing: -0.01em;
+    }
+
+    a:hover {
+      background: var(--hover-bg);
+      transform: translateY(-1px);
+    }
+
+    a .icon {
+      font-size: 14px;
+      line-height: 1;
+    }
+
+    /* Lien principal mis en avant */
+    a.primary {
+      background: var(--pill-bg);
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    a.primary:hover {
+      background: var(--accent);
+      color: #fff;
+    }
+
+    /* Label section (non cliquable) */
+    .label {
+      font-size: 10px;
+      font-weight: 600;
+      color: var(--muted);
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      padding: 0 4px;
+      flex-shrink: 0;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+
+    <!-- Accueil -->
+    <a class="primary"
+       href="https://www.notion.so/324da09d18fa81e2b476d12c15649345"
+       target="_blank">
+      <span class="icon">🎛️</span> Tableau de bord
+    </a>
+
+    <div class="sep"></div>
+
+    <!-- Hub -->
+    <a href="https://www.notion.so/324da09d18fa8189b4fff9bb7398baea"
+       target="_blank">
+      <span class="icon">🏫</span> Hub Central
+    </a>
+
+    <div class="sep"></div>
+
+    <span class="label">Gestionnaires</span>
+
+    <!-- Cours -->
+    <a href="https://www.notion.so/324da09d18fa818382affd91f76ed9bb"
+       target="_blank">
+      <span class="icon">📚</span> Cours
+    </a>
+
+    <!-- Élèves -->
+    <a href="https://www.notion.so/324da09d18fa81f1be12ffa360b4d9c8"
+       target="_blank">
+      <span class="icon">👨‍🎓</span> Élèves
+    </a>
+
+    <!-- Évaluations -->
+    <a href="https://www.notion.so/324da09d18fa81878eeef3c820936cca"
+       target="_blank">
+      <span class="icon">📝</span> Évaluations
+    </a>
+
+    <div class="sep"></div>
+
+    <span class="label">CRM</span>
+
+    <!-- OF -->
+    <a href="https://www.notion.so/fa35b64e7ada4cdfa3fe5e9dd694d05a"
+       target="_blank">
+      <span class="icon">🏛️</span> OF
+    </a>
+
+    <!-- Entreprises -->
+    <a href="https://www.notion.so/47239fa85a3246f0843a1e6c16ec7a98"
+       target="_blank">
+      <span class="icon">🏢</span> Entreprises
+    </a>
+
+    <div class="sep"></div>
+
+    <!-- Docs -->
+    <a href="https://www.notion.so/324da09d18fa81b0a56fdea328eea91c"
+       target="_blank">
+      <span class="icon">📖</span> Docs
+    </a>
+
+  </nav>
+</body>
+</html>
