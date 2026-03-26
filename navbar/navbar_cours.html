@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nav — Évaluations</title>
+<title>Nav — Tableau de bord</title>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -48,6 +48,12 @@
     color: #eaae3f;
     font-weight: 500;
   }
+  a.urgent {
+    background: rgba(220,53,53,0.18);
+    color: #f87171;
+    font-weight: 500;
+  }
+  a.urgent:hover { background: rgba(220,53,53,0.28); }
   .sep {
     width: 1px;
     height: 16px;
@@ -63,17 +69,16 @@
 <nav>
   <a target="_top" class="home" href="https://www.notion.so/329da09d18fa815884fac55b724d01a0" title="Hub principal">🏠</a>
   <div class="sep"></div>
-  <span class="context-label">📝 Évaluations</span>
-  <a target="_top" class="active" href="https://www.notion.so/324da09d18fa81878eeef3c820936cca">Vue d'ensemble</a>
-  <a target="_top" href="https://www.notion.so/4e709b0f51d641f083c19de200413bee">Fiches évaluations</a>
-  <a target="_top" href="https://www.notion.so/93eb577c25124f8a9a45c0cdb0a93e0c">Résultats</a>
-  <a target="_top" href="https://www.notion.so/6c3ef1c8d50d4003ad54640ce8aeb27e">Compétences</a>
-  <a target="_top" href="https://www.notion.so/66a78033c42842b79cd4273d8460ad2a">Feedbacks</a>
-  <a target="_top" href="https://www.notion.so/ec573007a44648f7b54b027586ab643d">Bilans</a>
+  <span class="context-label">🎛️ Dashboard</span>
+  <a target="_top" class="active" href="https://www.notion.so/324da09d18fa81e2b476d12c15649345">Vue d'ensemble</a>
+  <a target="_top" class="urgent" href="https://www.notion.so/d134b9e233d441e9a3da4f0bc34f37a1">🚨 Signalements</a>
+  <a target="_top" href="https://www.notion.so/d134b9e233d441e9a3da4f0bc34f37a1">Pointer les présences</a>
+  <a target="_top" href="https://www.notion.so/71528d85f5524d12941891dec45c363c">Planning séances</a>
+  <a target="_top" href="https://www.notion.so/4e709b0f51d641f083c19de200413bee">Prochaines évals</a>
   <div class="sep"></div>
   <a target="_top" href="https://www.notion.so/324da09d18fa818382affd91f76ed9bb">📚 Cours</a>
   <a target="_top" href="https://www.notion.so/324da09d18fa81f1be12ffa360b4d9c8">👨‍🎓 Élèves</a>
-  <a target="_top" href="https://www.notion.so/324da09d18fa81e2b476d12c15649345">🎛️ Tableau de bord</a>
+  <a target="_top" href="https://www.notion.so/324da09d18fa81878eeef3c820936cca">📝 Évaluations</a>
 </nav>
 </body>
 </html>
