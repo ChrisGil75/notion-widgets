@@ -3,82 +3,79 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nav — Tableau de bord</title>
+<title>Nav — Dashboard</title>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
-  body { background: #0f2942; font-family: 'DM Sans', sans-serif; }
+  html, body { height: 44px; overflow: hidden; }
+  body { font-family: 'DM Sans', sans-serif; background: transparent; }
   nav {
     display: flex;
     align-items: center;
-    padding: 0 1.25rem;
+    padding: 0 1rem;
     height: 44px;
-    background: #0f2942;
-    gap: 4px;
+    background: #f7f6f3;
+    border-bottom: 1.5px solid #e3e2de;
+    gap: 2px;
     overflow-x: auto;
     scrollbar-width: none;
   }
   nav::-webkit-scrollbar { display: none; }
   .context-label {
     font-size: 11px;
-    color: rgba(255,255,255,0.35);
-    letter-spacing: 0.08em;
+    font-weight: 500;
+    color: #9b9a97;
+    letter-spacing: 0.06em;
     text-transform: uppercase;
     white-space: nowrap;
-    margin-right: 8px;
-    padding-right: 12px;
-    border-right: 1px solid rgba(255,255,255,0.12);
+    margin-right: 6px;
+    padding-right: 10px;
+    border-right: 1.5px solid #e3e2de;
   }
   a {
     display: inline-flex;
     align-items: center;
     gap: 5px;
-    padding: 5px 12px;
+    padding: 4px 10px;
     border-radius: 6px;
-    font-size: 12.5px;
+    font-size: 13px;
     font-weight: 400;
-    color: rgba(255,255,255,0.65);
+    color: #6b6b6b;
     text-decoration: none;
     white-space: nowrap;
-    transition: background 0.15s, color 0.15s;
+    transition: background 0.12s, color 0.12s;
   }
-  a:hover { background: rgba(255,255,255,0.1); color: #fff; }
+  a:hover { background: #ebebea; color: #1a1a1a; }
   a.active {
-    background: rgba(234,174,63,0.18);
+    background: #0f2942;
     color: #eaae3f;
     font-weight: 500;
   }
   a.urgent {
-    background: rgba(220,53,53,0.18);
-    color: #f87171;
+    background: #fff0f0;
+    color: #c0392b;
     font-weight: 500;
   }
-  a.urgent:hover { background: rgba(220,53,53,0.28); }
-  .sep {
-    width: 1px;
-    height: 16px;
-    background: rgba(255,255,255,0.12);
-    margin: 0 4px;
-    flex-shrink: 0;
-  }
-  .home { color: rgba(255,255,255,0.4); font-size: 14px; padding: 5px 8px; }
-  .home:hover { color: #fff; background: rgba(255,255,255,0.08); }
+  a.urgent:hover { background: #ffe0e0; }
+  .sep { width: 1.5px; height: 16px; background: #e3e2de; margin: 0 6px; flex-shrink: 0; }
+  .home { font-size: 15px; padding: 4px 8px; color: #9b9a97; }
+  .home:hover { color: #1a1a1a; background: #ebebea; }
 </style>
 </head>
 <body>
 <nav>
-  <a class="home" href="https://www.notion.so/329da09d18fa815884fac55b724d01a0" title="Hub principal">🏠</a>
+  <a class="home" target="_top" href="https://www.notion.so/329da09d18fa815884fac55b724d01a0" title="Hub">🏠</a>
   <div class="sep"></div>
   <span class="context-label">🎛️ Dashboard</span>
-  <a class="active" href="https://www.notion.so/324da09d18fa81e2b476d12c15649345">Vue d'ensemble</a>
-  <a class="urgent" href="https://www.notion.so/d134b9e233d441e9a3da4f0bc34f37a1">🚨 Signalements</a>
-  <a href="https://www.notion.so/d134b9e233d441e9a3da4f0bc34f37a1">Pointer les présences</a>
-  <a href="https://www.notion.so/71528d85f5524d12941891dec45c363c">Planning séances</a>
-  <a href="https://www.notion.so/4e709b0f51d641f083c19de200413bee">Prochaines évals</a>
+  <a class="active" target="_top" href="https://www.notion.so/324da09d18fa81e2b476d12c15649345">Vue d'ensemble</a>
+  <a class="urgent" target="_top" href="https://www.notion.so/d134b9e233d441e9a3da4f0bc34f37a1">🚨 Signalements</a>
+  <a target="_top" href="https://www.notion.so/d134b9e233d441e9a3da4f0bc34f37a1">Pointer les présences</a>
+  <a target="_top" href="https://www.notion.so/71528d85f5524d12941891dec45c363c">Planning séances</a>
+  <a target="_top" href="https://www.notion.so/4e709b0f51d641f083c19de200413bee">Prochaines évals</a>
   <div class="sep"></div>
-  <a href="https://www.notion.so/324da09d18fa818382affd91f76ed9bb">📚 Cours</a>
-  <a href="https://www.notion.so/324da09d18fa81f1be12ffa360b4d9c8">👨‍🎓 Élèves</a>
-  <a href="https://www.notion.so/324da09d18fa81878eeef3c820936cca">📝 Évaluations</a>
+  <a target="_top" href="https://www.notion.so/324da09d18fa818382affd91f76ed9bb">📚 Cours</a>
+  <a target="_top" href="https://www.notion.so/324da09d18fa81f1be12ffa360b4d9c8">👨‍🎓 Élèves</a>
+  <a target="_top" href="https://www.notion.so/324da09d18fa81878eeef3c820936cca">📝 Évaluations</a>
 </nav>
 </body>
 </html>
