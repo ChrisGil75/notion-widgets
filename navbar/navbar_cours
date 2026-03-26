@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nav — Cours</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #0f2942; font-family: 'DM Sans', sans-serif; }
+  nav {
+    display: flex;
+    align-items: center;
+    padding: 0 1.25rem;
+    height: 44px;
+    background: #0f2942;
+    gap: 4px;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  nav::-webkit-scrollbar { display: none; }
+  .context-label {
+    font-size: 11px;
+    color: rgba(255,255,255,0.35);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    white-space: nowrap;
+    margin-right: 8px;
+    padding-right: 12px;
+    border-right: 1px solid rgba(255,255,255,0.12);
+  }
+  a {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 12px;
+    border-radius: 6px;
+    font-size: 12.5px;
+    font-weight: 400;
+    color: rgba(255,255,255,0.65);
+    text-decoration: none;
+    white-space: nowrap;
+    transition: background 0.15s, color 0.15s;
+  }
+  a:hover { background: rgba(255,255,255,0.1); color: #fff; }
+  a.active {
+    background: rgba(234,174,63,0.18);
+    color: #eaae3f;
+    font-weight: 500;
+  }
+  .sep {
+    width: 1px;
+    height: 16px;
+    background: rgba(255,255,255,0.12);
+    margin: 0 4px;
+    flex-shrink: 0;
+  }
+  .home {
+    color: rgba(255,255,255,0.4);
+    font-size: 14px;
+    padding: 5px 8px;
+  }
+  .home:hover { color: #fff; background: rgba(255,255,255,0.08); }
+</style>
+</head>
+<body>
+<nav>
+  <a class="home" href="https://www.notion.so/329da09d18fa815884fac55b724d01a0" title="Hub principal">🏠</a>
+  <div class="sep"></div>
+  <span class="context-label">📚 Cours</span>
+  <a class="active" href="https://www.notion.so/324da09d18fa818382affd91f76ed9bb">Vue d'ensemble</a>
+  <a href="https://www.notion.so/15b09a50dc4a49229ddf87be4e134da7">Fiches cours</a>
+  <a href="https://www.notion.so/71528d85f5524d12941891dec45c363c">Séances</a>
+  <a href="https://www.notion.so/4cd5515d45214e619a690e189b2a49ca">Documents</a>
+  <a href="https://www.notion.so/f7617971873745bbbe2ff783d9855fb6">Progression</a>
+  <div class="sep"></div>
+  <a href="https://www.notion.so/324da09d18fa81f1be12ffa360b4d9c8">👨‍🎓 Élèves</a>
+  <a href="https://www.notion.so/324da09d18fa81878eeef3c820936cca">📝 Évaluations</a>
+  <a href="https://www.notion.so/324da09d18fa81e2b476d12c15649345">🎛️ Tableau de bord</a>
+</nav>
+</body>
+</html>
